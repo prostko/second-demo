@@ -1,0 +1,9 @@
+# Add an entry, where the key represents a slug.
+# Provide at least a `name` value and optionally `image`, `description`, etc.
+# Markdown is enabled for `description`, however don't use more than one paragraph (enforced by `>`)
+
+first-tag:
+  name: First Tag
+
+second-tag:
+  name: Second Tag

@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+{% assign category = site.data.categories[page.category] %}
+
+<h1 class="page-title">{{ category.name }}</h1>
+  {% capture desc %}{{ category.description }}{:.message}{% endcapture %}
+  {{ desc | markdownify }}
+
+<hr/>
+
+<ul class="related-posts">
+{% for category_key in site.all_categories %}
+  {% assign category = site.data.categories[category_key] %}
+    <li>
+      <h3><a href="{{ site.baseurl }}/category/{{ category_key }}/">
+        <span>{{ category.name }}</span></a></h3>
+        <p class="category-description">{{ category.description }}</p>
+    </li>
+{% endfor %}
+</ul>
