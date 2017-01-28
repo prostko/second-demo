@@ -6,7 +6,7 @@ module.exports = function(grunt) {
         options: {
           sizes: [
           {
-            width: 800,
+            width: 1200,
           }]
         },
         files: [{
@@ -44,6 +44,18 @@ module.exports = function(grunt) {
       }
     },
 
+    uglify: {
+      my_target: {
+        files: [{
+            expand: true,
+            cwd: 'assets/development/javascript',
+            src: '**/*.js',
+            dest: 'assets/production/javascript',
+            ext: '.min.js'
+        }]
+      }
+    },
+
   });
 
   // -------------------------------------------------------------------------------------
@@ -52,6 +64,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   grunt.registerTask('resize', ['responsive_images']);
 
@@ -59,5 +72,5 @@ module.exports = function(grunt) {
 
   // 'default' preps all assets for deployment.
   // To run manually, run `grunt default`
-  grunt.registerTask('default', ["resize", 'sass', 'cssmin']);
+  grunt.registerTask('default', ["resize", "uglify", "sass", "cssmin"]);
 };

@@ -10,6 +10,10 @@ A starting frame for a Jekyll site.
 
 Run the `install-script.sh` to install NPM dependencies, Jekyll, and Sass.
 
+Run `jekyll server` to serve locally.
+
+In a separate terminal window, run `grunt watch` to watch for changes in `assets/development/stylesheets` and compile your Sass files into CSS, the result of which is your styles end up in `assets/production/main.css.min` and included in your site's `head` tag.
+
 <hr>
 
 ## Includes:
