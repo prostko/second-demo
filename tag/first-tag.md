@@ -1,5 +1,6 @@
 ---
-layout: post-by-tag
+layout: page
 tag: first-tag
-permalink: /tag/first-tag/
+title: "First Title"
+permalink: /first-tag/
 ---

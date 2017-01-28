@@ -4,6 +4,10 @@
 
 first-tag:
   name: First Tag
+  title: First Tag
+  description: "This is a description for the first tag."
 
 second-tag:
   name: Second Tag
+  title: Second Tag
+  description: "This is a description for the second tag."

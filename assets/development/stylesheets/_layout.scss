@@ -1,8 +1,8 @@
 /**
- * Index page styles overriding Bootstrap
+ * Index page styles
  */
 .index-wrapper {
-  padding-top: 50px;
+  padding-top: 40px;
 
   .jumbotron {
     padding: 20px;
@@ -20,5 +20,28 @@
     padding: 40px;
     border: 1px transparent;
     border-radius: 5px;
+  }
+}
+
+/**
+ * Search results page styles
+ */
+#search-results {
+  list-style: none;
+  padding: 0;
+}
+
+
+/**
+ * Blog page styles
+ */
+#blog-page {
+  .blog-posts {
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding-top: 20px;
+    }
   }
 }

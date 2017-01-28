@@ -1,5 +1,6 @@
 ---
-layout: post-by-tag
+layout: page
 tag: second-tag
-permalink: /tag/second-tag/
+title: "Second Title"
+permalink: /second-tag/
 ---

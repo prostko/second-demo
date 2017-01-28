@@ -1,5 +1,6 @@
 ---
 layout: category-page
 tag: second-category
-permalink: /category/second-category/
+title: "Second Category"
+permalink: /second-category/
 ---
