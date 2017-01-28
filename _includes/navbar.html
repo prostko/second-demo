@@ -20,7 +20,7 @@
           {% assign slug = category[0] %}
           {% assign category_data = category[1] %}
 
-          <li class="{% if page.title == slug %}active{% endif %}">
+          <li class="{% if page.tag == slug %}active{% endif %}">
             <a href="{{ site.baseurl }}/{{ slug }}/">
               {{ category_data.nav-name }}
             </a>

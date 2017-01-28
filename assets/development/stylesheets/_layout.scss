@@ -1,3 +1,9 @@
+.standard-ul {
+  list-style: none;
+  padding: 0;
+}
+
+
 /**
  * Index page styles
  */
@@ -26,22 +32,19 @@
 /**
  * Search results page styles
  */
-#search-results {
-  list-style: none;
-  padding: 0;
-}
-
 
 /**
  * Blog page styles
  */
 #blog-page {
   .blog-posts {
-    list-style: none;
-    padding: 0;
 
     li {
       padding-top: 20px;
     }
   }
 }
+
+/**
+ * Category page styles
+ */
