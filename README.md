@@ -6,9 +6,15 @@ A starting frame for a Jekyll site.
 
 <hr>
 
-## To get started
+## Dependencies
 
-Run the `install-script.sh` to install NPM dependencies, Jekyll, and Sass.
+**If you're on a Mac**: Run the `install-script.sh` to install NPM dependencies, Jekyll, and Sass. This will also check to make sure you have Homebrew, Ruby, and Node installed as well, and if not, will download them for you.
+
+**If you're on a Windows or Linux computer**: please be sure to have Ruby, Rubygems, Jekyll and Sass gems, Node, npm, and Grunt installed. The `install-script.sh` will not work for you. 
+
+<hr>
+
+## Getting started
 
 Run `jekyll server` to serve locally.
 
