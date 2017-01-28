@@ -4,14 +4,22 @@
   {% include head.html %}
 
   <body>
-    <!-- NAVBAR -->
+    {% include navbar.html %}
 
-    <main class="content container">
+    <main>
       {{ content }}
 
-      {% include footer.html %}
     </main>
-    <!-- Include site's JavaScript here -->
+
+    {% include footer.html %}
+    
+    <!-- Site's JavaScript files, from assets/production/javascript folder -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/production/javascript/main.min.js"></script>
 
     <!-- Include Google Analytics here -->
   </body>

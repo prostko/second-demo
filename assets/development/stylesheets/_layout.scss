@@ -1,1 +1,24 @@
+/**
+ * Index page styles overriding Bootstrap
+ */
+.index-wrapper {
+  padding-top: 50px;
 
+  .jumbotron {
+    padding: 20px;
+  }
+
+  #index-jumbotron {
+    background-image: url("/assets/production/images/computer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .inner-jumbotron {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 40px;
+    border: 1px transparent;
+    border-radius: 5px;
+  }
+}
