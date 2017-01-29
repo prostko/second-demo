@@ -1,6 +1,4 @@
-# Add an entry, where the key represents a slug.
-# Provide at least a `name` value and optionally `image`, `description`, etc.
-# Markdown is enabled for `description`, however don't use more than one paragraph (enforced by `>`)
+# When creating or altering categories, remember to duplicate your changes to the tag/ folder. Each tag needs to have its own [slug].md page, specifying its layout, tag, and permalink.
 
 first-tag:
   name: First Tag

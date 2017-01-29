@@ -20,8 +20,11 @@ layout: default
       {% for post in site.posts %}
         {% if post.categories contains page.tag %}
         <li>
-          <h3><a href="{{ site.baseurl }}{{ post.url }}">
-          <span>{{ post.title }}</span></a></h3>
+          <h3>
+            <a href="{{ site.baseurl }}{{ post.url }}">
+              {{ post.title }}
+            </a>
+          </h3>
           <p class="category-description">{{ post.description }}</p>
         </li>
         {% endif %}

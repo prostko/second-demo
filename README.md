@@ -10,7 +10,7 @@ A starting frame for a Jekyll site.
 
 **If you're on a Mac**: Run the `install-script.sh` to install NPM dependencies, Jekyll, and Sass. This will also check to make sure you have Homebrew, Ruby, and Node installed as well, and if not, will download them for you.
 
-**If you're on a Windows or Linux computer**: please be sure to have Ruby, Rubygems, Jekyll and Sass gems, Node, npm, and Grunt installed. The `install-script.sh` will not work for you. 
+**If you're on a Windows or Linux computer**: please be sure to have Ruby, Rubygems, Jekyll and Sass gems, Node, npm, and Grunt installed. The `install-script.sh` will not work for you.
 
 <hr>
 
@@ -18,7 +18,7 @@ A starting frame for a Jekyll site.
 
 Run `jekyll server` to serve locally.
 
-In a separate terminal window, run `grunt watch` to watch for changes in `assets/development/stylesheets` and compile your Sass files into CSS, the result of which is your styles end up in `assets/production/main.css.min` and included in your site's `head` tag.
+In a separate terminal tab/window, run `grunt watch` to watch for changes in `assets/development/stylesheets` and compile your Sass files into CSS, the result of which is your styles end up in `assets/production/main.css.min` and included in your site's `head` tag.
 
 <hr>
 
@@ -41,6 +41,14 @@ Also included with assets:
 * FontAwesome files.
 * `_includes/icon-github.html` and `_includes/icon-twitter.html` icons.
 
+### Adding new assets
+
+Add new Sass files to `assets/development/stylesheets` and import them into the main Sass file.
+
+Add new images to `assets/development/images`, then run `grunt` (or `grunt resize`) to make a copy of your newly added image, resize it, and place it into `assets/production/images` for you.
+
+Add new JavaScript files to `assets/development/javascript`, then run `grunt` (or `grunt uglify`) to make a copy of your new JS files, compress/uglify it, and place it into `assets/production/javascript` for you.
+
 <hr>
 
 ## Tags and Categories
@@ -49,7 +57,13 @@ To view your current tags and categories, review the files in `_data/`.
 
 Each tag needs to have its own slug, name, and description, as well as its own file in `tag/` folder.
 
-The file needs to specify its frontmatter, specifically `layout: post-by-tag`, `tag: [your-tag-slug]`, and `permalink: /tag/[your-tag-slug]/`.
+The file needs to specify its frontmatter, such as:
+
+```
+layout: post-by-tag
+tag: [your-tag-slug]
+permalink: /tag/[your-tag-slug]/
+```
 
 Same concept with categories.
 
