@@ -16,7 +16,9 @@ A starting frame for a Jekyll site.
 
 ## Getting started
 
-Run `jekyll server` to serve locally.
+**On your local computer:** Run `jekyll server` to serve locally.
+
+**On Cloud9:** Run `jekyll serve --host $IP --port $PORT --baseurl ''` to serve on Cloud9.
 
 In a separate terminal tab/window, run `grunt watch` to watch for changes in `assets/development/stylesheets` and compile your Sass files into CSS, the result of which is your styles end up in `assets/production/main.css.min` and included in your site's `head` tag.
 
