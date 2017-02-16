@@ -20,8 +20,6 @@ A starting frame for a Jekyll site.
 
 **On Cloud9:** Run `jekyll serve --host $IP --port $PORT --baseurl ''` to serve on Cloud9.
 
-It normal to see ` ERROR `/favicon.ico' not found.` This means Jekyll is looking for the favicons, not the jekyll-seed directory.
-
 In a separate terminal tab/window, run `grunt watch` to watch for changes in `assets/development/stylesheets` and compile your Sass files into CSS, the result of which is your styles end up in `assets/production/main.css.min` and included in your site's `head` tag.
 
 <hr>
