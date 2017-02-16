@@ -16,6 +16,8 @@ A starting frame for a Jekyll site.
 
 ## Getting started
 
+Check out the `_config.yml` file first, to set your variables. This config file is read only once when you start your server; so if you make changes to this file while your server is running, you will need to restart your server to see the changes.
+
 **On your local computer:** Run `jekyll server` to serve locally.
 
 **On Cloud9:** Run `jekyll serve --host $IP --port $PORT --baseurl ''` to serve on Cloud9.
