@@ -1,6 +1,6 @@
 #!/bin/bash
 
-which -s brew
+which -s brew # Homebrew
 if [[ $? != 0 ]] ; then
     echo -e "\n\n------------------------------------------"
     echo -e "\nInstalling Homebrew, a Mac terminal package manager...\n"
@@ -10,7 +10,7 @@ else
     echo -e "\nOkay, looks like you've got Homebrew installed."
 fi
 
-which -s ruby
+which -s ruby # Ruby
 if [[ $? != 0 ]] ; then
     echo -e "\n\n------------------------------------------"
     echo -e "\nInstalling Ruby by running 'brew install ruby' ...\n"
@@ -20,8 +20,25 @@ else
     echo -e "Okay, looks like you've got Ruby installed."
 fi
 
+which -s gm # GraphicsMagick
+if [[ $? != 0 ]] ; then
+    echo -e "\n\n------------------------------------------"
+    echo -e "\nInstalling GraphicsMagick by running 'brew install gm' ...\n"
+    brew install graphicsmagick
+else
+    echo -e "Okay, looks like you've got GraphicsMagick installed."
+fi
 
-which -s jekyll
+which -s convert # ImageMagick
+if [[ $? != 0 ]] ; then
+    echo -e "\n\n------------------------------------------"
+    echo -e "\nInstalling ImageMagick by running 'brew install imagemagick' ...\n"
+    brew install imagemagick
+else
+    echo -e "Okay, looks like you've got ImageMagick installed."
+fi
+
+which -s jekyll # Jekyll
 if [[ $? != 0 ]] ; then
     echo -e "\n\n------------------------------------------"
     echo -e "\nRunning 'gem install jekyll' ...\n"
@@ -31,7 +48,7 @@ else
 fi
 
 
-which -s sass
+which -s sass # Sass
 if [[ $? != 0 ]] ; then
     echo -e "\n\n------------------------------------------"
     echo -e "Running 'gem install sass' ...\n"
@@ -41,7 +58,7 @@ else
 fi
 
 
-which -s node
+which -s node # Node.js
 if [[ $? != 0 ]] ; then
     echo -e "\n\n------------------------------------------"
     echo -e "\nInstalling Node by running 'brew install node' ...\n"
@@ -51,7 +68,7 @@ else
 fi
 
 
-which -s grunt
+which -s grunt # Grunt package manager
 if [[ $? != 0 ]] ; then
     echo -e "\n\n------------------------------------------"
     echo -e "Installing Grunt by running 'npm install -g grunt-cli' ...\n"
